@@ -1,0 +1,7 @@
+﻿p[data-content='theme']:empty:before { content: 'Тема конкурса ещё не объявлена.' }
+p[data-content='theme']:not(:empty):before { content: 'Тема конкурса: ' }
+
+p[data-content='theme-description']:not(:empty):before { content: 'Описание: ' }
+
+a[data-content='form']:not([href^='http']) { text-decoration: line-through }
+span[data-content='form-note'] { display: none }

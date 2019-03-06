@@ -1,0 +1,24 @@
+﻿._whitebg { background-color: #fff; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15), 0 0 2px 0 rgba(0, 0, 0, .1) }
+
+.game { display: grid; grid-template-rows: 1fr; grid-template-columns: 250px 1fr; padding: 10px; margin-top: 10px; background-color: #fff; font-size: 0 }
+.game > * { display: inline-block; vertical-align: top }
+
+.game__picture { height: 200px }
+.game__info { padding-left: 10px; font-size: 1rem }
+
+.game__picture img { width: 100%; height: 100%; object-fit: contain }
+
+.game__info--title, .game__info--genre { margin-top: 0 }
+
+.game__info--title[data-game-status]::before { margin-right: 5px; padding: 5px; border-radius: 5px }
+.game__info--title[data-game-status='win']::before { content: '🏆'; background-color: #ccff00 }
+
+.game__info--link { display: block; padding: 3px; text-decoration: none; background-color: #f3f3f3; color: #000 !important; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, .5); transition: all 0.2s ease-in-out; font-size: 1.1em; text-align: center; text-transform: uppercase; user-select: none; }
+
+.game__info--link span { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABF1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJYS9AAAAXHRSTlMAAQIDBAUGBwgJCgwOExQYGhseHyElJiouLzM1N0VKS1FUVVZXWFxiZGZnaGltb4OIiYuSmp2eoKKlpqqrsLK1t7q+wMXIzM7R1dna3N7i5Obo6evt7/P19/n7/UAx3sEAAAGlSURBVFjD7ZZXV8JAEIUjEiBKsQt2EcTexS42FBFRaiDc//87PIc1INnCbnzhgfuUk9n77WSSmY2mDTXUwGpkduvqw6y+XmxMu7EH9k109L3pVfWvN9Gj2rKSXb8DpUuFJIx3MJQPSO/P9AM5XRJwD45u5fxxcLUi9f4sPqDu1QLJh0o5kzD4gAMIlFprkQsryfN7TMjphAOYg6w4OWw7lgXJ7SANsNh1uHYss+8zUkgwAQV5QIYJMOUBZSagIQ+osvxTjX89gn5GrVIqYrgIBYBFtXeoBhVAITbqyP8LSgCgmeqZUudQBQDFia5/Bi4AwHwH8MjsAafGqVJOauxu4UyMMSqFTw+JrDonqI/l9+Xoh9gjoVNIEFh+NMireEN/AtMPLLWDjI/ISeD4cchsY5rA8+OlHc6jD4HrR6UdT0NM4Pt/BwvnPLIJAj+eSCtDRBD5cUT2yAoIQj8WCCDKi+cMQ+i37FP/Bu60Y9fZX3LlL3WHSqjuwt+K/B2K6jm0Yj1fu1+1DqWIs+GiWZXtd1m/fuF4Oi/xk1F+Pl7UtaGGGiz9AAMkX7gULnAJAAAAAElFTkSuQmCC); padding-left: 30px; background-repeat: no-repeat; background-position: left center; background-size: 25px 25px; }
+
+@media (max-width: 699px) {
+	.game { grid-template-rows: 200px 1fr; grid-template-columns: 1fr }
+
+	.game__info { padding-left: 0; padding-top: 10px }
+}
