@@ -11,6 +11,3 @@ form.php - форма для отправки игр
 Потенциальное решение может быть здесь https://stackoverflow.com/q/19361282, но мне не помогло.
 
 Использовались js-библиотеки github.com/github/fetch и github.com/tehcojam/kamina-js, а также Google reCAPTHA v2 (developers.google.com/recaptcha/docs/display).
-
-Всё доступно под CC0 1.0. Надеюсь, это вам как-то поможет.
-https://creativecommons.org/publicdomain/zero/1.0/deed.ru
